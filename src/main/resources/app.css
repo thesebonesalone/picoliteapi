@@ -1,0 +1,52 @@
+/* app css stylesheet */
+
+body {
+  background: #555555;
+  color: white;
+  margin-bottom: 25rem;
+}
+
+h1 {
+  color: #ff78b7;
+  font-family: "Monaco", sans-serif;
+}
+
+.navbar {
+  background: #222222;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.card {
+  margin: 1rem;
+}
+
+.card-body {
+  color: black;
+}
+
+.card-title {
+  background-color: #ff78b7;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}

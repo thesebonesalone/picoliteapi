@@ -1,0 +1,24 @@
+
+<div ng-controller="articleController">
+    <h1>{{articleObject.article.title}}</h1>
+    <div>
+        <p ng-bind-html="articleObject.article.content"></p>
+    </div>
+    <div class="">
+        <h1>Comments</h1>
+        <iframe name="dummy" id="dummyframe" style="display:none;"></iframe>
+        <div *ng-if="warning" class="alert-danger">{{message}}</div>
+        <form novalidate method="post" action="http://localhost:8080/picolitemvc/comments" target="dummy">
+            <input type="text" name="username" ng-model="user" ng-change="deferWarning()" ng-required="expression" placeholder="username"/>
+            <textarea type="text" class="form-control" name="content" rows="3" ng-model="comment" ng-change="deferWarning()"></textarea>
+            <input type="submit" ng-click="update($event, comment, user)" value="Submit">
+        </form>
+
+        <div ng-repeat="entry in comments" class="card">
+            <h5 class = "card-title">{{entry.name}}</h5>
+            <div class = "card-body">{{entry.comment}}</div>
+        </div>
+    </div>
+
+</div>
+

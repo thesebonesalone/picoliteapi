@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/article.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/games/zelda.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/games" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/zelda.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/picolitefe/app/templates/article.html" value="file://$PROJECT_DIR$/src/main/webapp/picolitefe/app/templates" />
+      </map>
+    </option>
+  </component>
+</project>

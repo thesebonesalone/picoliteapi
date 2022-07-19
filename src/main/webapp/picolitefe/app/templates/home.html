@@ -1,0 +1,15 @@
+<div ng-controller="articlesController">
+    <h1>Pico Lite</h1>
+    <h2>Learn to code video games with simple tools and tutorials!</h2>
+    <div>
+        <div>
+            <form novalidate class="simple-form">
+                <label >Filter: <input type="text" ng-model="filter" ng-change="update(filter)"/></label>
+            </form>
+        </div>
+        <div ng-repeat="article in shownArticles">
+            <h3><a href="#!/article/{{article.id}}">{{article.title}}</a></h3>
+        </div>
+    </div>
+</div>
+
